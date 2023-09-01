@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 247, 247);
+}
+
+.card {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.card__total {
+  color: white;
+  text-align: center;
+  padding: 10px 60px 30px 60px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.card__total .card__circle {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  margin: 1.2rem auto;
+  border-radius: 50%;
+}
+.card__total .card__circle > h1 {
+  font-size: 3rem;
+}
+.card__total .card__circle > h3 {
+  color: hsl(241, 100%, 89%);
+  font-size: 0.8rem;
+}
+.card__total > h2 {
+  font-size: 1.3rem;
+}
+.card__total > p {
+  color: hsl(241, 100%, 89%);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.card .card__summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  background-color: white;
+  padding: 1rem 1.5rem;
+}
+.card .card__summary > h2 {
+  font-size: 1.05rem;
+}
+.card .card__summary .card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1rem 0;
+  flex: 1;
+  gap: 0.8rem;
+}
+.card .card__summary .card__container .card__results {
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  flex-grow: 1;
+  font-weight: 700;
+}
+.card .card__summary .card__container .card__results--text {
+  display: flex;
+  gap: 0.8rem;
+}
+.card .card__summary .card__container .card__results:nth-child(1) {
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0, 100%, 97%);
+}
+.card .card__summary .card__container .card__results:nth-child(2) {
+  flex: 1;
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 96%);
+}
+.card .card__summary .card__container .card__results:nth-child(3) {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 97%);
+}
+.card .card__summary .card__container .card__results:nth-child(4) {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 95%);
+}
+.card .card__summary .card__container .card__results > p {
+  color: gray;
+}
+.card .card__summary .card__container .card__results > p span {
+  color: black;
+  font-weight: 700;
+}
+
+.button {
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 410px;
+    max-width: 580px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .card__total {
+    flex: 1 1 50%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px 50px 30px 50px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 2rem;
+  }
+  .card__total > p:first-child {
+    font-size: 1.2rem;
+  }
+  .card__total .card__circle {
+    background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+  }
+  .card__total .card__circle > h1 {
+    font-size: 4rem;
+  }
+  .card__total .card__circle > h3 {
+    font-size: 1rem;
+  }
+  .card__total > h2 {
+    font-size: 1.6rem;
+  }
+  .card__total > p {
+    color: hsl(241, 100%, 89%);
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+  }
+  .card .card__summary {
+    justify-content: space-around;
+    padding: 4rem 1.5rem;
+    flex: 1 1 50%;
+    height: 100%;
+  }
+  .card .card__summary > h2 {
+    font-size: 1.3rem;
+  }
+  .card .card__summary .card__container {
+    justify-content: space-around;
+    margin: 1.8rem 0;
+    gap: 1rem;
+  }
+  .card .card__summary .card__container .card__results {
+    max-height: 2.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
