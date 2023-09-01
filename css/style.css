@@ -128,8 +128,8 @@ body {
   .card {
     border-radius: 2rem;
     overflow: hidden;
-    height: 410px;
-    max-width: 580px;
+    height: 450px;
+    max-width: 650px;
     flex-direction: row;
     align-items: center;
   }
@@ -138,17 +138,17 @@ body {
     height: 100%;
     color: white;
     text-align: center;
-    padding: 20px 50px 30px 50px;
+    padding: 25px 50px 20px 50px;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 2rem;
   }
   .card__total > p:first-child {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .card__total .card__circle {
     background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
-    height: 160px;
-    width: 160px;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
   }
   .card__total .card__circle > h1 {
@@ -158,12 +158,12 @@ body {
     font-size: 1rem;
   }
   .card__total > h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   .card__total > p {
     color: hsl(241, 100%, 89%);
-    margin-top: 0.6rem;
-    font-size: 0.85rem;
+    margin-top: 0.7rem;
+    font-size: 0.95rem;
   }
   .card .card__summary {
     justify-content: space-around;
